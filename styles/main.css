@@ -25,21 +25,20 @@ nav div a:link, nav div a:visited {
 MAIN-VIEW STYLES
 ****************/
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 130px;
+  background-color: #fffaf3; }
 
 #main_container {
   margin-top: 75px;
   padding-bottom: 5px; }
-
-#blog_container {
-  padding-bottom: 65px; }
 
 #headshot {
   width: 70%;
   box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.75); }
 
 #about_container {
-  margin: 195px 0px 100px 0px;
+  margin: 165px 0px 100px 0px;
   padding: 0px 95px 60px 95px;
   letter-spacing: 1px;
   line-height: 30px; }

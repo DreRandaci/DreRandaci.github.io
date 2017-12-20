@@ -4,3 +4,4 @@ dist/app.js
 lib/package-lock.json
 db/apiKeys.json
 public
+javascripts/AppConstants.js
