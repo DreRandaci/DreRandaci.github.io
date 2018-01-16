@@ -56,13 +56,19 @@ svg {
   height: 100%;
   width: 100%; }
 
+.light_blue_background {
+  background-color: #baeeec; }
+
 .header {
   color: #baeeec; }
 
 .add_padding {
   padding-top: 4em; }
 
-.add_border {
+.add_border_top {
+  border-top: 2px solid #baeeec; }
+
+.add_border_bottom {
   border-bottom: 2px solid #baeeec; }
 
 .border_right {
