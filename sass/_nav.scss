@@ -1,3 +1,4 @@
+@import 'colors';
 nav {
     height: 50px;
     width: 100%;
@@ -5,10 +6,11 @@ nav {
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
+    background-color: $dark-blue-background;
 }
 nav div a:link, nav div a:visited {
     text-decoration: none;
-    color: #000000;
+    // color: #000000;
     letter-spacing: 3px;
     transition: 0.2s;
 }
