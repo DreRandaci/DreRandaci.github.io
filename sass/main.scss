@@ -8,9 +8,11 @@ MAIN-VIEW STYLES
 a {
     color: white;    
 }
+a:focus, a:hover {
+    text-decoration: none;
+}
 body {
     font-family: $main-font;
-    padding-bottom: 130px;    
     color: $dark-blue-background; 
 }
 svg {
@@ -28,10 +30,8 @@ svg {
 #about_container {    
     letter-spacing: 1px;
     line-height: 30px;
-}
-#tools_img {
-    height: 100%;
-    width: 100%;
+    border-right: 2px solid #baeeec; 
+    border-top: 2px solid #baeeec; 
 }
 #jr_dev {
     color: white;
@@ -45,12 +45,6 @@ svg {
 .add_padding {
     padding-top: 4em;
 }
-.add_border_top {
-    border-top: 2px solid #baeeec; 
-}
-.add_border_bottom {
-    border-bottom: 2px solid #baeeec; 
-}
 .border_right {
     border-right: 2px solid $dark-blue-background; 
 }
@@ -61,18 +55,11 @@ svg {
 .list-group-item>a {
     color: $dark-blue-background; 
 }
-
-/************************
-LINE BREAK UNDER HEADSHOT
-****************/
-
-.horizontal_break { 
-    border: 0; 
-    height: 2px; 
-    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+.container-fluid > a {
+    color: #4892d2;
+}
+.container-fluid > a:hover {
+    color: #265d8d;
 }
 
 /*********************
@@ -81,7 +68,7 @@ PROJECT CARDS OVERLAY
 
 .content {
 position: relative;
-height: 250px;
+height: 550px;
 margin: auto;
 overflow: hidden;
 }
@@ -138,18 +125,11 @@ top: 80%;
 FOOTER STYLES
 ****************/
 
-.footer_links {
-    padding-top: 2em;    
-}
-.footer_links a {
-    padding-right: 1em;
-    color: $footer_links;
-}
 #github:hover {
     color: $github-color;
 }
-#facebook:hover {
-    color: $facebook-color;
+#resume:hover {
+    color: $resume-color;
 }
 #linkedIn:hover {
     color: $linkedIn-color;

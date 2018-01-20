@@ -1,20 +1,27 @@
-<div id="projects_container" class="text-center container" ng-controller="ProjectsCtrl">
-    <h3 id="projects_heading">Projects</h3>
+<div id="projects_container" class="text-center container-fluid" ng-controller="ProjectsCtrl">
     <div class="row">
-        <div ng-repeat="project in projects" class="col-sm-6 col-md-4">
-            <div class="thumbnail">                                    
-                <div class="content">
-                    <div class="panel-heading">                                                        
-                        <h1 class="panel-title">{{project.name}}</h1>
-                    </div>            
-                    <a href="{{project.github_url}}">
-                        <div class="content-overlay"></div>
-                        <img id="project_img-{{project.id}}" class="project_img content-image" ng-src="{{project.img}}">
-                        <div class="content-details fadeIn-bottom">
-                            <div class="content-text"><p>{{project.description}}</p></div>
+        <div class="col-md-12">
+            <div class="text-center col-md-4 light_blue_background">
+                <h1>Projects</h1>
+            </div>
+
+            <div ng-repeat="project in projects" class="col-md-4">
+                <div class="thumbnail">
+                    <div class="content">
+                        <div class="panel-heading">
+                            <h1 class="panel-title">{{project.name}}</h1>
                         </div>
-                    </a>                                
-                </div>                
+                        <a href="{{project.github_url}}">
+                            <div class="content-overlay"></div>
+                            <img id="project_img-{{project.id}}" class="project_img content-image" ng-src="{{project.img}}">
+                            <div class="content-details fadeIn-bottom">
+                                <div class="content-text">
+                                    <p>{{project.description}}</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -27,9 +27,11 @@ MAIN-VIEW STYLES
 a {
   color: white; }
 
+a:focus, a:hover {
+  text-decoration: none; }
+
 body {
   font-family: "Montserrat", "Open Sans", "sans-serif";
-  padding-bottom: 130px;
   color: #273547; }
 
 svg {
@@ -46,11 +48,9 @@ svg {
 
 #about_container {
   letter-spacing: 1px;
-  line-height: 30px; }
-
-#tools_img {
-  height: 100%;
-  width: 100%; }
+  line-height: 30px;
+  border-right: 2px solid #baeeec;
+  border-top: 2px solid #baeeec; }
 
 #jr_dev {
   color: white; }
@@ -64,12 +64,6 @@ svg {
 .add_padding {
   padding-top: 4em; }
 
-.add_border_top {
-  border-top: 2px solid #baeeec; }
-
-.add_border_bottom {
-  border-bottom: 2px solid #baeeec; }
-
 .border_right {
   border-right: 2px solid #273547; }
 
@@ -80,23 +74,18 @@ svg {
 .list-group-item > a {
   color: #273547; }
 
-/************************
-LINE BREAK UNDER HEADSHOT
-****************/
-.horizontal_break {
-  border: 0;
-  height: 2px;
-  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); }
+.container-fluid > a {
+  color: #4892d2; }
+
+.container-fluid > a:hover {
+  color: #265d8d; }
 
 /*********************
 PROJECT CARDS OVERLAY
 ****************/
 .content {
   position: relative;
-  height: 250px;
+  height: 550px;
   margin: auto;
   overflow: hidden; }
 
@@ -151,18 +140,11 @@ PROJECT CARDS OVERLAY
 /****************
 FOOTER STYLES
 ****************/
-.footer_links {
-  padding-top: 2em; }
-
-.footer_links a {
-  padding-right: 1em;
-  color: black; }
-
 #github:hover {
-  color: #3c7403; }
+  color: #498c05; }
 
-#facebook:hover {
-  color: #005bbd; }
+#resume:hover {
+  color: #9b4e95; }
 
 #linkedIn:hover {
   color: #009cf0; }
