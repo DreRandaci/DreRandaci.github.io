@@ -1,132 +1,140 @@
 {
-    "projects": [
-        {
-            "id": 1,
-            "name": "My Weather",
-            "github_url": "https://github.com/DreRandaci/weather-app",
-            "img": "https://user-images.githubusercontent.com/30006986/33236043-c165995a-d215-11e7-8e15-f34f707bace5.png",
-            "tech_stack": "Browserify, Grunt, jQuery, Bootstrap, ES6, Open Weather API",
-            "description": "Search 1, 3, and 5 day weather forecasts by zipcode using the Open Weather API."    
-        },
-        {
-            "id": 2,
-            "name": "Chat App",
-            "github_url": "https://github.com/nss-evening-cohort-06/chatty-fancy-butterflies",
-            "img": "https://user-images.githubusercontent.com/30006986/33236064-3b458564-d216-11e7-9f49-bb96c5be8d3e.png",
-            "tech_stack": "Browserify, Grunt, jQuery, Bootstrap, ES6",
-            "description": "Chat app built for sending and editing messages. Users can select a theme profile that changes icons and color layout. Options for text size are included. Contributions from Dre Randaci, Gib Bowden, Ken Lewis, Ben Harrington."
-        },
-        {
-          "id": 3,
-          "name": "Contacts App",
-          "github_url": "https://github.com/DreRandaci/angular-contacts",
-          "img": "https://user-images.githubusercontent.com/30006986/33236056-06aef98e-d216-11e7-825c-22bd29050d83.png",
-          "tech_stack": "AngularJS, Grunt, SASS, ES6, Bootstrap, Font Awesome",
-          "description": "Contacts app built for creating and saving personal contacts. Optional image upload is also included. Users can favorite or edit any contact after saving."
-        },
-        {
-          "id": 4,
-          "name": "Temperature Converter",
-          "github_url": "https://github.com/DreRandaci/Fahrenheit-to-celsius-",
-          "img": "https://user-images.githubusercontent.com/30006986/33236074-716a2bb8-d216-11e7-93f8-b71e850d60e1.png",
-          "tech_stack": "JavaScript, HTML, CSS",
-          "description": "Users can convert temperature to and from celsius or fahrenheit. Written in vanilla JS."
-        },
-        {
-          "id": 5,
-          "name": "Acme Explosives",
-          "github_url": "https://github.com/DreRandaci/acme-explosives",
-          "img": "https://user-images.githubusercontent.com/30006986/33236026-41c0e042-d215-11e7-8c2a-455b21434756.png",
-          "tech_stack": "Grunt, NPM, ES6, Bootstrap, Animate CSS, JavaScript, jQuery",
-          "description": "An app to browse coffee equipment and brewers. Users select a category from a drop down and the products associated with that category print to the DOM."
-        },
-        {
-          "id": 6,
-          "name": "Treehouse Badges",
-          "github_url": "https://github.com/DreRandaci/bigin-badges",
-          "img": "https://user-images.githubusercontent.com/30006986/33236078-8d441f9c-d216-11e7-99e4-b4ff494f7d1f.png",
-          "tech_stack": "jQuery, Browserify, Grunt, Animate CSS",
-          "description": "Pulls a users earned Team Treehouse badges and allows them to play around with some CSS animations using Animate CSS."
-        }
-    ],
-    "blogs": [{
-        "id": 1,
-        "title": "First few weeks in the code zone",
-        "content": "So far, this whole coding thing has been pretty great. CSS is definitely something I want to be good at because it will most likely frustrate me more than the other languages (look out, JS). I&#39;ve been getting better at understanding the Chrome dev tools, and that is SUPER helpful, especially for layout and just seeing where tf everything is. We had our first JS lesson last night and I&#39;m pumped to see how I digust actually making programs. Stoked!",
-        "date": "07-25-2017"
-  
-      },
-      {
-        "id": 2,
-        "title": "Javascript: Do you know where YOUR variables are defined?",
-        "content": "Javascript is intimidating and mind bending; so much power with such little code! The possibilites are endless with how you use it. I'm not going to pretend like I fully understand it yet, as I struggled with the YDKJS: Tax Rate challenge but nearly came close to getting it correct. Starting to see some progress and less blank staring at my laptop screen (although, this is likely to come back around as class gets denser!).",
-        "date": "07-28-2017"
-      },
-      {
-        "id": 3,
-        "title": "Javascript, tho",
-        "content": "So, we had the 'Coin Counter' exercise this week, which basically helped to kick my arse into high gear for what's to come. As frustrating as JS can be, there is an immense satisfaction in finding solutions. Things I learned during this exercise: 1) If in doubt, start wherever you know. Try things. Try a lot of things. Especially in codewars (holy cow, very challenging, but super helpful). 2) When working with others or in groups, make sure to try and tackle one problem at a time. Things can branch off quickly and get murky. Otherwise, I just need to keep practicing and working on as many different problems as possible.",
-        "date": "07-31-2017"
-      },
-      {
-        "id": 4,
-        "title": "Tempereture Converter",
-        "content": "The 'Tempereture Converter' assigment was tricky. There were a few concepts that were unfamiliar but it all worked out in the end. First time dealing with event handlers and I definitely kept calling the anonymous functions incorrectly.",
-        "date": "08-04-2017"
-      },
-      {
-        "id": 5,
-        "title": "XHR",
-        "content": "XHR was a little weird at first and 'Seasonal Sales' was definitely a little challenging. I struggled the most accessing the objects at the appropriate times and toggling between classes when displaying the different prices on the page. I started writing code one way and refactored it after going over a few concepts in class, which I think played a part in my confusion later on.",
-        "date": "08-29-2017"
-      },
-      {
-        "id": 6,
-        "title": "Bootstrap",
-        "content": "Bootstrap rules. More CSS frameworks please.",
-        "date": "09-05-2017"
-      },
-      {
-        "id": 7,
-        "title": "Task Runners and Browserify",
-        "content": "Browserify is amazing and I never want to go back. Eliminating as many bugs as possible before launching an app makes going through the whole process less volitile.",
-        "date": "09-18-2017"
-      },
-      {
-        "id": 8,
-        "title": "Chatty App and jQuery",
-        "content": "The group project was an incredible learning experience. We had a broken app to present, but the workflow and features we added were fantastic practice in using all the available debugging and development tools.",
-        "date": "10-7-2017"
-      },
-      {
-        "id": 9,
-        "title": "Promises",
-        "content": "Promises are a big improvement over XHR requests. Very straightforward, although a bit tricky to debug.",
-        "date": "10-17-2017"
-      },
-      {
-        "id": 10,
-        "title": "API's",
-        "content": "API's are a test in your abilities to actually understand documentation.",
-        "date": "10-24-2017"
-      },
-      {
-        "id": 11,
-        "title": "Firebase",
-        "content": "Firebase is cool. It's nice being able to actually deploy an application and share it with others.",
-        "date": "10-31-2017"
-      },
-      {
-        "id": 12,
-        "title": "Theme Park Group Proj",
-        "content": "This was a monster of a project. We had some real struggles in structuring our data correctly. Being more proficient with promises would've helped exponentially.",
-        "date": "11-11-2017"
-      },
-      {
-        "id": 13,
-        "title": "AngularJS",
-        "content": "The days of domStrings are long gone. I was getting to the point where I would try using anything other than a forEach loop to write HTML in JavaScript, but thanks to Angular that problem is dust in the wind.",
-        "date": "11-22-2017"
-      }
-    ]
-  }
+  "projects": [
+    {
+      "id": 1,
+      "name": "Crag Rock",
+      "github_url": "https://github.com/DreRandaci/front-end-capstone",
+      "img": "https://user-images.githubusercontent.com/30006986/35004138-9dacd2e0-fab4-11e7-9a83-ec1858b06d91.png",
+      "tech_stack": "AngularJS",
+      "description": "NSS Front-end capstone that allows users to find climbing areas around them, search for crags, filter route types, find accommodations around the crag area, get directions to those areas and accommodations, and create/save climbing trips."
+    },
+    {
+      "id": 7,
+      "name": "My Weather",
+      "github_url": "https://github.com/DreRandaci/weather-app",
+      "img": "https://user-images.githubusercontent.com/30006986/33236043-c165995a-d215-11e7-8e15-f34f707bace5.png",
+      "tech_stack": "Browserify, Grunt, jQuery, Bootstrap, ES6, Open Weather API",
+      "description": "Search 1, 3, and 5 day weather forecasts by zipcode using the Open Weather API."
+    },
+    {
+      "id": 2,
+      "name": "Chat App",
+      "github_url": "https://github.com/nss-evening-cohort-06/chatty-fancy-butterflies",
+      "img": "https://user-images.githubusercontent.com/30006986/33236064-3b458564-d216-11e7-9f49-bb96c5be8d3e.png",
+      "tech_stack": "Browserify, Grunt, jQuery, Bootstrap, ES6",
+      "description": "Chat app built for sending and editing messages. Users can select a theme profile that changes icons and color layout. Options for text size are included. Contributions from Dre Randaci, Gib Bowden, Ken Lewis, Ben Harrington."
+    },
+    {
+      "id": 3,
+      "name": "Contacts App",
+      "github_url": "https://github.com/DreRandaci/angular-contacts",
+      "img": "https://user-images.githubusercontent.com/30006986/33236056-06aef98e-d216-11e7-825c-22bd29050d83.png",
+      "tech_stack": "AngularJS, Grunt, SASS, ES6, Bootstrap, Font Awesome",
+      "description": "Contacts app built for creating and saving personal contacts. Optional image upload is also included. Users can favorite or edit any contact after saving."
+    },
+    {
+      "id": 4,
+      "name": "Temperature Converter",
+      "github_url": "https://github.com/DreRandaci/Fahrenheit-to-celsius-",
+      "img": "https://user-images.githubusercontent.com/30006986/33236074-716a2bb8-d216-11e7-93f8-b71e850d60e1.png",
+      "tech_stack": "JavaScript, HTML, CSS",
+      "description": "Users can convert temperature to and from celsius or fahrenheit. Written in vanilla JS."
+    },
+    {
+      "id": 5,
+      "name": "Acme Explosives",
+      "github_url": "https://github.com/DreRandaci/acme-explosives",
+      "img": "https://user-images.githubusercontent.com/30006986/33236026-41c0e042-d215-11e7-8c2a-455b21434756.png",
+      "tech_stack": "Grunt, NPM, ES6, Bootstrap, Animate CSS, JavaScript, jQuery",
+      "description": "An app to browse coffee equipment and brewers. Users select a category from a drop down and the products associated with that category print to the DOM."
+    },
+    {
+      "id": 6,
+      "name": "Treehouse Badges",
+      "github_url": "https://github.com/DreRandaci/bigin-badges",
+      "img": "https://user-images.githubusercontent.com/30006986/33236078-8d441f9c-d216-11e7-99e4-b4ff494f7d1f.png",
+      "tech_stack": "jQuery, Browserify, Grunt, Animate CSS",
+      "description": "Pulls a users earned Team Treehouse badges and allows them to play around with some CSS animations using Animate CSS."
+    }
+  ],
+  "blogs": [
+    {
+      "id": 1,
+      "title": "First few weeks in the code zone",
+      "content": "So far, this whole coding thing has been pretty great. CSS is definitely something I want to be good at because it will most likely frustrate me more than the other languages (look out, JS). I&#39;ve been getting better at understanding the Chrome dev tools, and that is SUPER helpful, especially for layout and just seeing where tf everything is. We had our first JS lesson last night and I&#39;m pumped to see how I digust actually making programs. Stoked!",
+      "date": "07-25-2017"
+    },
+    {
+      "id": 2,
+      "title": "Javascript: Do you know where YOUR variables are defined?",
+      "content": "Javascript is intimidating and mind bending; so much power with such little code! The possibilites are endless with how you use it. I'm not going to pretend like I fully understand it yet, as I struggled with the YDKJS: Tax Rate challenge but nearly came close to getting it correct. Starting to see some progress and less blank staring at my laptop screen (although, this is likely to come back around as class gets denser!).",
+      "date": "07-28-2017"
+    },
+    {
+      "id": 3,
+      "title": "Javascript, tho",
+      "content": "So, we had the 'Coin Counter' exercise this week, which basically helped to kick my arse into high gear for what's to come. As frustrating as JS can be, there is an immense satisfaction in finding solutions. Things I learned during this exercise: 1) If in doubt, start wherever you know. Try things. Try a lot of things. Especially in codewars (holy cow, very challenging, but super helpful). 2) When working with others or in groups, make sure to try and tackle one problem at a time. Things can branch off quickly and get murky. Otherwise, I just need to keep practicing and working on as many different problems as possible.",
+      "date": "07-31-2017"
+    },
+    {
+      "id": 4,
+      "title": "Tempereture Converter",
+      "content": "The 'Tempereture Converter' assigment was tricky. There were a few concepts that were unfamiliar but it all worked out in the end. First time dealing with event handlers and I definitely kept calling the anonymous functions incorrectly.",
+      "date": "08-04-2017"
+    },
+    {
+      "id": 5,
+      "title": "XHR",
+      "content": "XHR was a little weird at first and 'Seasonal Sales' was definitely a little challenging. I struggled the most accessing the objects at the appropriate times and toggling between classes when displaying the different prices on the page. I started writing code one way and refactored it after going over a few concepts in class, which I think played a part in my confusion later on.",
+      "date": "08-29-2017"
+    },
+    {
+      "id": 6,
+      "title": "Bootstrap",
+      "content": "Bootstrap rules. More CSS frameworks please.",
+      "date": "09-05-2017"
+    },
+    {
+      "id": 7,
+      "title": "Task Runners and Browserify",
+      "content": "Browserify is amazing and I never want to go back. Eliminating as many bugs as possible before launching an app makes going through the whole process less volitile.",
+      "date": "09-18-2017"
+    },
+    {
+      "id": 8,
+      "title": "Chatty App and jQuery",
+      "content": "The group project was an incredible learning experience. We had a broken app to present, but the workflow and features we added were fantastic practice in using all the available debugging and development tools.",
+      "date": "10-7-2017"
+    },
+    {
+      "id": 9,
+      "title": "Promises",
+      "content": "Promises are a big improvement over XHR requests. Very straightforward, although a bit tricky to debug.",
+      "date": "10-17-2017"
+    },
+    {
+      "id": 10,
+      "title": "API's",
+      "content": "API's are a test in your abilities to actually understand documentation.",
+      "date": "10-24-2017"
+    },
+    {
+      "id": 11,
+      "title": "Firebase",
+      "content": "Firebase is cool. It's nice being able to actually deploy an application and share it with others.",
+      "date": "10-31-2017"
+    },
+    {
+      "id": 12,
+      "title": "Theme Park Group Proj",
+      "content": "This was a monster of a project. We had some real struggles in structuring our data correctly. Being more proficient with promises would've helped exponentially.",
+      "date": "11-11-2017"
+    },
+    {
+      "id": 13,
+      "title": "AngularJS",
+      "content": "The days of domStrings are long gone. I was getting to the point where I would try using anything other than a forEach loop to write HTML in JavaScript, but thanks to Angular that problem is dust in the wind.",
+      "date": "11-22-2017"
+    }
+  ]
+}

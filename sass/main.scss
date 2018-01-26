@@ -5,49 +5,78 @@
 /****************
 MAIN-VIEW STYLES
 ****************/
-
+a {
+    color: white;    
+}
+a:focus, a:hover {
+    text-decoration: none;
+}
 body {
     font-family: $main-font;
-    padding-bottom: 130px;
-    background-color: $background-color;
+    color: $dark-blue-background; 
+}
+svg {
+    width: 25%;
 }
 #main_container {
-    margin-top: 75px;
-    padding-bottom: 5px;
+    padding-bottom: 25px;   
+    background-color: $dark-blue-background; 
 }
 #headshot {
     width: 70%;    
     box-shadow: 4px 4px 14px 0px rgba(0, 0, 0, 0.75);
+    border: 2px solid white;
 }
-#about_container {
-    margin: 165px 0px 100px 0px;
-    padding: 0px 95px 60px 95px;
+#about_container {    
     letter-spacing: 1px;
     line-height: 30px;
 }
-#greeting {
-    border-bottom: 1px solid black;
-    padding-bottom: 8px;
+#jr_dev {
+    color: white;
+}
+.light_blue_background {
+    background-color: $light-blue-border;
+}
+.list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+    margin-bottom: 35px;
+}
+.header {
+    color: $light-blue-border; 
 }
 .add_padding {
     padding-top: 4em;
+}
+.border_right {
+    border-right: 10px solid $light-blue-border; 
+}
+.border_left {
+    border-left: 10px solid #baeeec;
 }
 .project_img {
     width: 100%;
     height: 250px;
 }
-
-/************************
-LINE BREAK UNDER HEADSHOT
-****************/
-
-.horizontal_break { 
-    border: 0; 
-    height: 1px; 
-    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+.list-group-item>a {
+    color: $dark-blue-background; 
+}
+.list-inline>li {
+    width: 250px;
+}
+.container-fluid > a {
+    color: #4892d2;
+}
+.container-fluid > a:hover {
+    color: #265d8d;
+}
+.gold_header_color {
+    color: #f7c25f;
+}
+.projects_btn:hover, .projects_btn:link {
+    color: $dark-blue-background;
+    transition: 0.8s;
 }
 
 /*********************
@@ -56,7 +85,6 @@ PROJECT CARDS OVERLAY
 
 .content {
 position: relative;
-height: 250px;
 margin: auto;
 overflow: hidden;
 }
@@ -112,19 +140,15 @@ top: 80%;
 /****************
 FOOTER STYLES
 ****************/
+footer {
+    padding-top: 30px;
+}
 
-.footer_links {
-    padding-top: 2em;    
-}
-.footer_links a {
-    padding-right: 1em;
-    color: $footer_links;
-}
 #github:hover {
     color: $github-color;
 }
-#facebook:hover {
-    color: $facebook-color;
+#resume:hover {
+    color: $resume-color;
 }
 #linkedIn:hover {
     color: $linkedIn-color;
