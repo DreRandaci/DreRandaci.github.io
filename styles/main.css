@@ -48,15 +48,19 @@ svg {
 
 #about_container {
   letter-spacing: 1px;
-  line-height: 30px;
-  border-right: 2px solid #baeeec;
-  border-top: 2px solid #baeeec; }
+  line-height: 30px; }
 
 #jr_dev {
   color: white; }
 
 .light_blue_background {
   background-color: #baeeec; }
+
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+  margin-bottom: 35px; }
 
 .header {
   color: #baeeec; }
@@ -65,7 +69,10 @@ svg {
   padding-top: 4em; }
 
 .border_right {
-  border-right: 2px solid #273547; }
+  border-right: 10px solid #baeeec; }
+
+.border_left {
+  border-left: 10px solid #baeeec; }
 
 .project_img {
   width: 100%;
@@ -74,18 +81,27 @@ svg {
 .list-group-item > a {
   color: #273547; }
 
+.list-inline > li {
+  width: 250px; }
+
 .container-fluid > a {
   color: #4892d2; }
 
 .container-fluid > a:hover {
   color: #265d8d; }
 
+.gold_header_color {
+  color: #f7c25f; }
+
+.projects_btn:hover, .projects_btn:link {
+  color: #273547;
+  transition: 0.8s; }
+
 /*********************
 PROJECT CARDS OVERLAY
 ****************/
 .content {
   position: relative;
-  height: 550px;
   margin: auto;
   overflow: hidden; }
 
@@ -140,6 +156,9 @@ PROJECT CARDS OVERLAY
 /****************
 FOOTER STYLES
 ****************/
+footer {
+  padding-top: 30px; }
+
 #github:hover {
   color: #498c05; }
 
