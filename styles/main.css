@@ -53,6 +53,9 @@ svg {
 #jr_dev {
   color: white; }
 
+.add_about_padding {
+  padding: 5em; }
+
 .light_blue_background {
   background-color: #baeeec; }
 
@@ -73,6 +76,20 @@ svg {
 
 .border_left {
   border-left: 10px solid #baeeec; }
+
+.border {
+  border: 10px solid #baeeec;
+  background-color: white; }
+
+.border_bottom {
+  border-bottom: 10px solid #baeeec; }
+
+.proj_img {
+  padding: 3em; }
+
+.proj_description {
+  line-height: 1.5em;
+  letter-spacing: 1px; }
 
 .project_img {
   width: 100%;
@@ -160,13 +177,10 @@ footer {
   padding-top: 30px; }
 
 #github:hover {
-  color: #498c05; }
-
-#resume:hover {
-  color: #9b4e95; }
+  color: #63bf05; }
 
 #linkedIn:hover {
   color: #009cf0; }
 
 #email:hover {
-  color: #c40000; }
+  color: #976cde; }
