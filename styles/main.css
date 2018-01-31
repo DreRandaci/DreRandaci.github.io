@@ -37,9 +37,43 @@ body {
 svg {
   width: 25%; }
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 996px) {
+  nav {
+    display: none; }
+  .light_blue_background {
+    background-color: #baeeec;
+    margin-top: -1px;
+    padding-top: 1em;
+    padding-bottom: 2em; }
+  .header {
+    color: #baeeec;
+    padding-bottom: 3em; }
+  .border {
+    border: none !important; }
+  .border_bottom {
+    border-bottom: none !important; }
+  .border_right {
+    border-right: none !important; }
+  .border_left {
+    border-left: none !important; }
+  .hide_proj {
+    display: block !important;
+    color: #baeeec;
+    border-bottom: 1px solid black !important; } }
+
+.hide_proj {
+  display: none; }
+
+.tech_icon_container {
+  margin-top: 30px; }
+
 #main_container {
   padding-bottom: 25px;
   background-color: #273547; }
+
+.margin_bottom {
+  margin-bottom: 30px; }
 
 #headshot {
   width: 70%;
@@ -79,7 +113,8 @@ svg {
 
 .border {
   border: 10px solid #baeeec;
-  background-color: white; }
+  background-color: white;
+  margin-bottom: 30px; }
 
 .border_bottom {
   border-bottom: 10px solid #baeeec; }
@@ -115,61 +150,8 @@ svg {
   transition: 0.8s; }
 
 /*********************
-PROJECT CARDS OVERLAY
+MEDIA QUERIES
 ****************/
-.content {
-  position: relative;
-  margin: auto;
-  overflow: hidden; }
-
-.content .content-overlay {
-  background: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  height: 99%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s; }
-
-.content:hover .content-overlay {
-  opacity: 1; }
-
-.content-image {
-  width: 100%; }
-
-.content-details {
-  position: absolute;
-  text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s; }
-
-.content:hover .content-details {
-  top: 50%;
-  left: 50%;
-  opacity: 1; }
-
-.content-details p {
-  color: #fff;
-  font-size: 1em; }
-
-.fadeIn-bottom {
-  top: 80%; }
-
 /****************
 FOOTER STYLES
 ****************/
