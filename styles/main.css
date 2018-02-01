@@ -38,9 +38,15 @@ svg {
   width: 25%; }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 996px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+  h1, h2, h3 {
+    font-size: 40px; }
+  .h4, h4 {
+    font-size: 23px; }
   nav {
     display: none; }
+  #project_nav_show {
+    display: block !important; }
   .light_blue_background {
     background-color: #baeeec;
     margin-top: -1px;
@@ -60,7 +66,31 @@ svg {
   .hide_proj {
     display: block !important;
     color: #baeeec;
-    border-bottom: 1px solid black !important; } }
+    border-bottom: 1px solid #283547 !important;
+    padding-bottom: 1em; }
+  .about_text {
+    font-size: 30px !important;
+    letter-spacing: 2px !important;
+    line-height: 40px !important; }
+  .proj_description {
+    line-height: 40px;
+    letter-spacing: 2px;
+    font-size: 30px;
+    text-align: center; }
+  .proj_img {
+    width: 100%; }
+  .project_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-top: 1em;
+    padding-right: 1em;
+    margin-top: 0;
+    color: #4c8fba; } }
+
+#project_nav_show {
+  display: none; }
 
 .hide_proj {
   display: none; }
