@@ -31,9 +31,6 @@ MEDIA QUERIES
     .h4, h4 {
         font-size: 23px;
     }
-    nav {
-        display: none;
-    }
     #project_nav_show {
         display: block !important;
     }
@@ -103,6 +100,7 @@ MEDIA QUERIES
         #main_container {
             padding-bottom: 25px;   
             background-color: $dark-blue-background; 
+            margin-top: -1px;
         }
         .margin_bottom {
             margin-bottom: 30px;
