@@ -19,6 +19,9 @@ svg {
     width: 25%;
 }
 
+/*********************
+MEDIA QUERIES
+****************/
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
@@ -180,15 +183,6 @@ svg {
             transition: 0.8s;
         }
 
-/*********************
-MEDIA QUERIES
-****************/
-
-@media screen and (max-width: 996px) and (min-width: 320px) {
-
-
-
-}
 
 /****************
 FOOTER STYLES
