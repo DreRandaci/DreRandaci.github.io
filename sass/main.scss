@@ -24,7 +24,7 @@ MEDIA QUERIES
 ****************/
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
+@media only screen and (min-device-width : 300px) and (max-device-width : 1024px) {
     h1, h2, h3 {
         font-size: 40px;
     } 
@@ -63,7 +63,7 @@ MEDIA QUERIES
         padding-bottom: 1em;
     }
     .about_text {
-        font-size: 30px !important;
+        font-size: 40px !important;
         letter-spacing: 2px !important;
         line-height: 40px !important;
     }
