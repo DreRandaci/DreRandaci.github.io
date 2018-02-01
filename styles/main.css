@@ -16,7 +16,8 @@ nav div a:link, nav div a:visited {
   padding-right: 2em; }
 
 #nav_bar a {
-  padding-right: 1em; }
+  padding-right: 1em;
+  color: #5da7ce; }
 
 .nav_hover:hover {
   color: #787878; }
