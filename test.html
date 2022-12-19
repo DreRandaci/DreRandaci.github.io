@@ -8,11 +8,11 @@
 
     <title>FreightWise Programming Test</title>
 
-    <!-- Note: organizing blocks by types into regions -->
+    <!-- Note: organizing blocks by types / regions -->
 
     <!-- #region CSS: external -->
-        <!-- Adding Bootstrap 5 as Freightwise uses Bootstrap for the main application design tool -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Adding Bootstrap 5 as Freightwise uses Bootstrap for the main application design tool -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- #endregion -->
 
     <!-- #region CSS: application -->
@@ -21,8 +21,8 @@
 
     <!-- #region JAVASCRIPT: external -->
 
-        <!-- Fix: moving this above the application code, which ensures we have 3rd party libraries availble before excuting our application -->
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Fix: moving this above the application code, which ensures we have 3rd party libraries availble before excuting our application -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <!-- #endregion -->
 
@@ -90,9 +90,11 @@
             }
 
             setError(error) {
-                const errMessage = 'message' in error ? error.message : error.toString();
-                document.getElementById('error-message').innerHTML = errMessage || 'Oops! Something went wrong, please try again.';
-                // I find toasts an elegant error and notification solution, could easily switch it out for an alert or other UX implementation
+                // I approach error handling by generalizing the caught messages to keep the implementation simple until a more robust solution is needed. The drawback is that you may not get 100% insight into the exception event.
+                const errMessage = 'message' in error ? error.message : 'Oops! Something went wrong, please try again.';
+                document.getElementById('error-message').innerHTML = errMessage;
+
+                // I find toasts an elegant error and notification solution, but could easily switch it out for an alert or other UX implementation
                 const toastEl = document.getElementById("error-toast");
                 const errToast = new bootstrap.Toast(toastEl);
                 errToast.show();
