@@ -27,6 +27,7 @@
     <!-- #endregion -->
 
     <!-- #region JAVASCRIPT: application -->
+    <script src="api.js"></script>
     <script>
         'use strict';
 
@@ -91,7 +92,7 @@
             setError(error) {
                 const errMessage = 'message' in error ? error.message : error.toString();
                 document.getElementById('error-message').innerHTML = errMessage || 'Oops! Something went wrong, please try again.';
-                // Create toast instance
+                // I find toasts an elegant error and notification solution, could easily switch it out for an alert or other UX implementation
                 const toastEl = document.getElementById("error-toast");
                 const errToast = new bootstrap.Toast(toastEl);
                 errToast.show();
@@ -127,92 +128,11 @@
                 document.getElementById('humidity').innerHTML = `${Math.round(results.main.humidity)}%`;
             }
         }
-
-        // TODO: consistent semicolons
-        class WeatherAPI {
-            // TODO: hide API key
-            #apiKey = '25e989bd41e3e24ce13173d8126e0fd6';
-            #baseURI = 'https://api.openweathermap.org';
-
-            // Note: only supporting US/imperial/eng for mvp. storing these as properties will allow easier refactoring later as requirements change (eng is the default, so not storing)
-            #defaultUnits = 'imperial'
-            #supportedCountryCodes = ['US'];
-
-            constructor() {}
-
-            /**
-             * Fetches the lat/long for a given city and state (US support only)
-             *
-             * @param {{city: string, stateCode: string}} query - location options
-             * @returns {Promise<{lat: string, lon: string}>} - geo request result
-            */
-            async getGeoCoordinates(query = {}) {
-                // Adding try/catch to return optional custom errors vs. the caller handling all API and runtime errors
-                try {
-                    const country = this.#supportedCountryCodes[0] // see note about country support above
-                    const { city, stateCode } = query;
-                    const route = `${this.#baseURI}/geo/1.0/direct`
-                    const params = {
-                        q: `${city},${stateCode},${country}`,
-                        limit: 1,
-                        appid: this.#apiKey
-                    }
-                    const { data } = await axios.get(`${route}`, { params });
-
-                    if (!data.length) {
-                        throw new Error('Error: no results for provided query')
-                    }
-
-                    // The result is an array even when limit is set to 1
-                    const { lat, lon } = data[0]
-
-                    return { lat, lon }
-                } catch (error) {
-                    // rethrow error to caller for handling
-                    throw error;
-                }
-            }
-
-            /**
-             * Fetches the lat/long for a given city and state (US support only)
-             *
-             * @param {{city: string, stateCode: string}} location - location for where to fetch the weather
-             * @returns {Promise<{}>} - current weather result
-            */
-            async getCurrentWeather(location) {
-                try {
-                    const latLon = await this.getGeoCoordinates(location)
-                    const route = `${this.#baseURI}/data/2.5/weather`
-                    const params = {
-                        lat: latLon.lat,
-                        lon: latLon.lon,
-                        units: this.#defaultUnits,
-                        appid: this.#apiKey
-                    }
-                    const { data } = await axios.get(route, { params });
-
-                    return data
-                } catch (error) {
-                    // rethrow error to caller for handling
-                    throw error;
-                }
-            }
-        }
-
-        /** Class representing needed API's.
-         * Although it is only used for the weather API for mvp, it can easily be extended to include other API domains and share common configurations.
-        */
-        class API {
-            WeatherAPI;
-            constructor() {
-                this.WeatherAPI = new WeatherAPI()
-            }
-        }
     </script>
     <!-- #endregion -->
 </head>
 <body>
-    <!-- Adding Bootstrap layout + components -->
+    <!-- Using Bootstrap layout + components. See the cdn import script for details -->
     <div class="container-fluid mt-5">
         <div class="row justify-content-center">
             <div class="col-12 col-md-4 col-sm-12 col-xs-12">
@@ -255,7 +175,7 @@
         </div>
         <div class="mt-3 button-container"></div>
 
-        <!-- Toasts -->
+        <!-- Error toasts -->
         <div class="toast-container position-absolute p-3 bottom-0 end-0" id="toastPlacement">
             <div id="error-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="toast-header">
